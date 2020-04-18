@@ -28,7 +28,6 @@ for col in df.columns:
        print('column removed')
 
 
-import ipdb;ipdb.set_trace()
 print('prune1')
 df.to_csv(csvpath_out1 , index = False, header=True)
 
@@ -53,7 +52,6 @@ for imidx, imattr in df.iterrows():
                         "Surprise": int(imgemo_votes["Surprise"]),"Neutral":int(imgemo_votes["Neutral"])}, ignore_index=True)
         emo_cat.append(imgemo_cats)
         imname.append(imgname)
-import ipdb;ipdb.set_trace()
 print('prune 2')
 import ipdb;ipdb.set_trace()
 df_processed.to_csv(csvpath_out2 , index = False, header=True)
